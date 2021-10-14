@@ -11,14 +11,14 @@ productionPrefix: 'ma',
 export default () => {
   return (
     <div>
-      <StylesProvider generateClassName={generateClassName}>
         <BrowserRouter>
+        <StylesProvider generateClassName={generateClassName}>
           <Switch>
             <Route exact path="/pricing" component={Pricing} />
             <Route path="/" component={Landing} />
           </Switch>
+          </StylesProvider>
         </BrowserRouter>
-      </StylesProvider>
     </div>
   );
 };
