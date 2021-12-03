@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === 'development') {
     mount(devRoot);
   }
 }
- 
+
 // We are running through container
 // and we should export the mount function
 export { mount };
